@@ -47,6 +47,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="d2bf-1ed1-65e1-e11a" name="Sponsor Perk" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="60bf-0f00-db63-fb4e" name="Team" hidden="false">
@@ -1085,9 +1092,17 @@
                 <cost name="Cans" costTypeId="91a9-beed-6d55-d7ea" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dedc-2c1b-1abe-00e2" name="Highway Patrol" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="dedc-2c1b-1abe-00e2" name="Highway Patrol" book="TX3" page="3" hidden="false" collective="false" type="upgrade">
               <profiles/>
-              <rules/>
+              <rules>
+                <rule id="8192-32f6-4e64-7a85" name="Highway Patrol" book="TX3" page="3" hidden="true">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Perk Classes: Speed and Pursuit.</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints/>
@@ -1102,7 +1117,18 @@
               </categoryLinks>
               <selectionEntries/>
               <selectionEntryGroups/>
-              <entryLinks/>
+              <entryLinks>
+                <entryLink id="4f6d-cd6d-f5d4-441a" name="Highway Patrol" hidden="false" targetId="fa0d-ac68-513e-9ec3" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="100.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="1bf6-2abe-c2c3-53c2" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Build Points" costTypeId="ba54-acdf-648d-86c5" value="0.0"/>
                 <cost name="Cans" costTypeId="91a9-beed-6d55-d7ea" value="0.0"/>
@@ -4324,9 +4350,17 @@
       <constraints/>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="fc9c-b917-4954-32b7" name="Louder Siren" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="fc9c-b917-4954-32b7" name="Louder Siren" book="TX3" page="3" hidden="true" collective="false" type="upgrade">
           <profiles/>
-          <rules/>
+          <rules>
+            <rule id="6770-64d8-a8ba-71d6" name="Louder Siren" book="Gaslands TX3" page="3" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Replace &quot;Bogey&quot; with &quot;any enemy vehicle&quot; for the purposes of the Siren special rules.</description>
+            </rule>
+          </rules>
           <infoLinks/>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -5425,9 +5459,17 @@
           <constraints/>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="4f2c-456c-38fb-d7da" name="On Your Tail" book="TX3" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4f2c-456c-38fb-d7da" name="On Your Tail" book="TX3" page="4" hidden="false" collective="false" type="upgrade">
               <profiles/>
-              <rules/>
+              <rules>
+                <rule id="1140-3613-a4a8-bb20" name="On Your Tail" book="TX3" page="4" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>When an enemy vehicle resolves a spin or slide move that ends within short range of this vehicle, that vehicle gains +1 hazard token.</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints>
@@ -5444,7 +5486,15 @@
             </selectionEntry>
             <selectionEntry id="1b17-18e8-4b05-e7b5" name="Taunt" book="TX3" hidden="false" collective="false" type="upgrade">
               <profiles/>
-              <rules/>
+              <rules>
+                <rule id="48ca-074d-0093-14af" name="Taunt" book="TX3" page="4" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>At the start of this vehicle’s attack step, roll a skid die. If you roll something other than a SHIFT result, you may place that skid die result onto the dashboard of a target vehicle within short range. This skid die result must be resolved during that vehicle’s next skid check, and may not be re-rolled.</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints>
@@ -5459,9 +5509,17 @@
                 <cost name="Build Points" costTypeId="ba54-acdf-648d-86c5" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="40ce-ea27-0bb0-9a01" name="Schadenfreude" book="TX3" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="40ce-ea27-0bb0-9a01" name="Schadenfreude" book="TX3" page="4" hidden="false" collective="false" type="upgrade">
               <profiles/>
-              <rules/>
+              <rules>
+                <rule id="328d-d336-a8fd-7418" name="Schadenfreude" book="TX3" page="4" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>If another vehicle within short range of this vehicle resolves a wipe out, (either before or after any flip), remove all hazard tokens from this vehicle.</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints>
@@ -5478,7 +5536,15 @@
             </selectionEntry>
             <selectionEntry id="3b93-43ed-6c33-7477" name="PIT" book="TX3" hidden="false" collective="false" type="upgrade">
               <profiles/>
-              <rules/>
+              <rules>
+                <rule id="654e-7b08-0497-10f2" name="PIT" book="TX3" page="4" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>If this vehicle is involved in a collision with an enemy vehicle during its activation that is not head-on, it may declare a “Pursuit Intervention Technique” (PIT) against the enemy vehicle instead of declaring a SMASH ATTACK or an evade. If this vehicle declares a PIT, it may select any maneuver template the target vehicle considers hazardous in its current gear. The target vehicle must immediately resolve a movement step, during which it is forced to must use the maneuver template selected for it and may not roll any skid dice.</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints>
@@ -5495,7 +5561,15 @@
             </selectionEntry>
             <selectionEntry id="d4cd-0d87-5cc7-fd9f" name="Unnerving Eye Contact" hidden="false" collective="false" type="upgrade">
               <profiles/>
-              <rules/>
+              <rules>
+                <rule id="ed51-f9d4-2ca6-e1e0" name="Unnerving Eye Contact" book="TX3" page="4" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Enemy vehicles within short range of this vehicle may not use shift results to remove hazard tokens from their dashboard.</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints>
@@ -5512,7 +5586,15 @@
             </selectionEntry>
             <selectionEntry id="ba0a-535e-b1dd-1b89" name="Out Run" book="TX3" hidden="false" collective="false" type="upgrade">
               <profiles/>
-              <rules/>
+              <rules>
+                <rule id="9e2e-ecc6-f782-2e39" name="Out Run" book="TX3" page="4" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>At the start of this vehicle’s attack step, all vehicles within short range of this vehicle and in a current, lower gear than this vehicle gain +1 hazard token.</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints>
@@ -5526,6 +5608,185 @@
                 <cost name="Cans" costTypeId="91a9-beed-6d55-d7ea" value="2.0"/>
                 <cost name="Build Points" costTypeId="ba54-acdf-648d-86c5" value="0.0"/>
               </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4130-d32c-12d5-c483" name="Sponsored Perks" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fa0d-ac68-513e-9ec3" name="Highway Patrol" book="TX3" page="3" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="9411-31a9-79fc-3ec2" name="Hot Pursuit" book="TX3" page="3" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="7371-047f-dd74-bb5f" name="Hot Pursuit" book="TX3" page="3" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Before the first gear phase of the game, after deployment, this team must nominate one enemy vehicle as the “Bogey”.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e953-a957-0d60-e29a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d088-5eeb-1579-57f2" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="4422-cf1f-00d1-44e7" name="Sponsor Perk" hidden="false" targetId="d2bf-1ed1-65e1-e11a" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="3f58-0809-f263-088d" name="Bogey at 12 O’Clock" book="TX3" page="3" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="3dba-76a9-e1fc-16cf" name="Bogey at 12 O’Clock" book="TX3" page="3" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>At the end of this vehicle’s movement step, if the Bogey is in this vehicle’s front arc of fire, in line of sight, and further than double range away, this vehicle may immediately resolve another movement step.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2627-c599-c318-f691" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37fe-6ca2-29f5-b695" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="8cd0-e7d6-7fef-d5ff" name="Sponsor Perk" hidden="false" targetId="d2bf-1ed1-65e1-e11a" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="6bf7-1362-001c-0583" name="The Job Is Never Done" book="TX3" page="3" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="7888-b3a0-d9d7-a1ae" name="The Job Is Never Done" book="TX3" page="3" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>If the bogey is wrecked or disqualified, immediately nominate another enemy vehicle to be the bogey.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15e4-ab8f-d692-2b99" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c15-4f54-3617-81bd" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="d5eb-2915-282f-c0eb" name="Sponsor Perk" hidden="false" targetId="d2bf-1ed1-65e1-e11a" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="c7ff-73ad-bd9d-ddd1" name="Siren" book="TX3" page="4" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="c5c2-d26c-b8a6-9cae" name="Siren" book="TX3" page="3" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>At the end of this vehicle’s activation, if this vehicle in the Bogey’s rear arc of fire (regardless of range), the Bogey must either reduce its gear by 1 or gain 2 hazards.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb82-1def-f46e-a8d4" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d052-3838-778d-c264" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="600a-4991-10d8-bd5d" name="Sponsor Perk" hidden="false" targetId="d2bf-1ed1-65e1-e11a" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="0bc8-4901-9b37-0be8" name="Steel Justice" book="TX3" page="3" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="224d-885c-9fe0-656e" name="Steel Justice" book="TX3" page="3" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>If the Bogey wipes out this team as a whole gains 2 audience votes. If the Bogey is wrecked this team as a whole gains 4 audience votes.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf3a-ab34-7179-7189" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5558-6b5c-bde1-59b1" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="42d9-8b4d-b5c1-2fb1" name="Sponsor Perk" hidden="false" targetId="d2bf-1ed1-65e1-e11a" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
