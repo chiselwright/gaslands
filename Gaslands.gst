@@ -82,7 +82,15 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="d518-c956-c6e5-8082" name="New CategoryLink" hidden="false" targetId="6b0c-dbca-afd2-7a45" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -901,7 +909,7 @@
         <cost name="Build Points" costTypeId="ba54-acdf-648d-86c5" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9318-eb03-9bdd-ec00" name="Sponsor" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="9318-eb03-9bdd-ec00" name="Sponsorship" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
